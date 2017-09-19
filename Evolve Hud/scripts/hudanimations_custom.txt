@@ -1,0 +1,244 @@
+﻿//===========================================
+
+//Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"100"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"100"			Linear 0.2 0.4
+	
+	
+	Animate	PlayerStatusHealthValue				FgColor		"EvolveBuffedHealth"		Accel 0.0 0.0
+	Animate 	PlayerStatusHealthValueFreezePanel 	BgColor 	"EvolveBuffedHealth"		Accel 0.0 0.0
+	
+	Animate	SpecHealthBlueBar 	Alpha		"240"			Linear 0.0 0.2
+	Animate	SpecHealthBlueBar 	Alpha		"200"			Linear 0.2 0.4
+	
+	
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+	
+	Animate PlayerStatusHealthValue FgColor "EvolveWhite" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpec FgColor "EvolveWhite" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpecBG BgColor "0 0 0 0" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel BgColor "0 0 0 0" Accel 0.0 0.0
+
+	Animate	SpecHealthBlueBar 	Alpha		"0"		Accel 0.0 0.0 //remove healthBG1Blue	
+}
+
+
+//===========================================
+
+//Health Dying Pulse
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"96"			Linear 0.125 0.075
+	
+	Animate PlayerStatusHealthValue 		 FgColor "EvolveLowHealth" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel BgColor "EvolveLowHealth" 	Accel 0.0 0.0
+
+	Animate	SpecHealthRedBar		Alpha		"255"		Linear 0.0 0.075
+	Animate	SpecHealthRedBar		Alpha		"240"			Linear 0.125 0.075	
+	
+	RunEvent HudHealthDyingPulseLoop	0.4
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+	
+	Animate PlayerStatusHealthValue FgColor "EvolveWhite" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpec FgColor "EvolveWhite" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpecBG BgColor "0 0 0 0" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel BgColor "0 0 0 0" Accel 0.0 0.0
+	
+	Animate	SpecHealthRedBar 	Alpha		"0"		Accel 0.0 0.0 //remove healthBG1Red	
+}
+
+//===========================================
+
+event HudLowAmmoPulse
+{
+	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
+	Animate	HudWeaponLowAmmoImage		Alpha		"0"			Linear 0.125 0.075
+	
+	
+	Animate	AmmoInClip					FgColor		"EvolveLowAmmo"		Accel 0.0 0.0
+	
+	//Animate	AmmoInReserve			FgColor		"EvolveLowAmmo"			Accel 0.0 0.0
+
+	Animate	AmmoNoClip					FgColor		"EvolveLowAmmo"		Accel 0.0 0.0	
+	
+	
+	RunEvent HudLowAmmoPulseLoop	0.25
+}
+
+// call to loop HudLowAmmoPulse
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse 0.0
+}
+
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	
+	
+	Animate 	AmmoInClip 	FgColor 	"EvolveWhite"	Accel 0.0 0.0
+	
+	Animate 	AmmoInReserve 	FgColor 	"EvolvePink"	Accel 0.0 0.0
+	
+	Animate 	AmmoNoClip 	FgColor 	"EvolveWhite"	Accel 0.0 0.0
+}
+
+//===========================================
+
+event FlagOutlineHide
+{
+	Animate OutlineImage	Alpha		"0"				Linear 0.0 0.1
+}
+
+// Local player flag pickup/drop
+event FlagOutline
+{
+	RunEvent FlagOutlineHide 0.0
+	Animate OutlineImage	Alpha		"0"				Linear 0.1 0.2
+	
+	Animate OutlineImage	Position	"c-200 140"		Linear 0.1 0.2
+	Animate OutlineImage	Size		"400 200"		Linear 0.1 0.2
+
+	Animate OutlineImage	Position	"c-50 r137"		Linear 0.7 0.2	[$WIN32]
+	Animate OutlineImage	Position	"c-50 r158"		Linear 0.7 0.2	[$X360]
+	Animate OutlineImage	Size		"100 50"		Linear 0.7 0.2
+	
+	Animate OutlineImage	Alpha		"0"				Linear 0.9 0.1
+}
+
+//===========================================
+
+// Spy Disguise
+event HudSpyDisguiseChanged
+{
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Position	"c-200 c-200"	Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"0 0"		Linear 0.0 0.2
+
+	RunEvent HudSpyDisguiseHide	0.7
+}
+
+event HudSpyDisguiseHide
+{
+	Animate PlayerStatusSpyOutlineImage		Position	"3 413"			Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"55 55"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
+}
+
+event HudSpyDisguiseFadeIn
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"255"			Linear 0.9 0.1	
+	
+	Animate PlayerStatusClassImage			Alpha		"255"			Linear 0.0 0.0	
+}
+
+event HudSpyDisguiseFadeOut
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"				Linear 0.9 0.1	
+	
+	Animate PlayerStatusClassImage			Alpha		"0"			Linear 0.0 0.0	
+}
+
+//===========================================
+
+event HudTournamentSetupPanelOpen
+{
+	Animate HudTournamentSetup	Position	"0 -70"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"0 70"	Spline 0.001 0.2
+}
+
+event HudTournamentSetupPanelClose
+{
+	Animate HudTournamentSetup	Position	"0 70"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"0 -70"	Spline 0.001 0.2
+}
+
+//===========================================
+
+event DamagedPlayer
+{
+	Animate SeekerXhair 	FgColor 	"EvolveMint" 		Linear 0.0 0.00001
+	Animate SeekerXhair 	FgColor 	"235 226 202 255" 	Linear 0.10 0.10001
+}
+
+//===========================================
+
+// Flash the medic charge hud when we have full charge
+
+event HudMedicCharged
+{
+
+	Animate	ChargeLabel 	FgColor		"EvolvePink"	Linear 0.0 0.1
+	Animate	ChargeLabel 	FgColor		"EvolveBlue"		Linear 0.1 0.1
+	Animate	ChargeLabel 	FgColor		"EvolvePink"	Linear 0.2 0.1
+	Animate	ChargeLabel 	FgColor		"EvolveBlue"		Linear 0.3 0.1
+	
+	Animate	ChargeMeter 	FgColor		"EvolvePink"	Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"EvolveBlue"		Linear 0.1 0.1
+	Animate	ChargeMeter 	FgColor		"EvolvePink"	Linear 0.2 0.1
+	Animate	ChargeMeter 	FgColor		"EvolveBlue"		Linear 0.3 0.1
+	
+	
+	Animate	ChargeMeter1 	FgColor		"EvolvePink"	Linear 0.0 0.0
+	Animate	ChargeMeter2 	FgColor		"EvolveBlue"	Linear 0.0 0.0
+	Animate	ChargeMeter3 	FgColor		"EvolvePink"	Linear 0.0 0.0
+	Animate	ChargeMeter4 	FgColor		"EvolveBlue"	Linear 0.0 0.0
+
+	
+
+	RunEvent HudMedicChargedLoop	0.6
+}
+
+// call to loop HudHealthBonusPulse
+event HudMedicChargedLoop
+{
+	RunEvent HudMedicCharged 0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate	ChargeLabel 	FgColor		"255 255 255 255"		Linear 0.0 0.0001
+	
+	Animate	ChargeMeter 	FgColor		"EvolvePink"	Linear 0.0 0.0001
+	
+	Animate	ChargeMeter1 	FgColor		"EvolvePink"	Linear 0.0 0.0
+	Animate	ChargeMeter2 	FgColor		"EvolveBlue"	Linear 0.0 0.0
+	Animate	ChargeMeter3 	FgColor		"EvolvePink"	Linear 0.0 0.0
+	Animate	ChargeMeter4 	FgColor		"EvolveBlue"	Linear 0.0 0.0
+}
+
+//===========================================
