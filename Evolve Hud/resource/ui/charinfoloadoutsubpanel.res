@@ -1864,7 +1864,7 @@
 		"enabled"			"1"
 		"labelText"			"F"
 		"textinsety"		"-9"
-		"font"				"Entypo14"
+		"font"				"Entypo26"
 		"command"			"paintkit_preview"
 		"textAlignment"		"center"
 

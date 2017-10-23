@@ -842,7 +842,7 @@ Scheme
 			}
 		}
 		
-		"Entypo14"		//Main menu icons
+		"Entypo26"		//Main menu icons
         {
             "1"
             {
