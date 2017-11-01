@@ -1110,7 +1110,8 @@ Scheme
 				"antialias"	"1"
 				"additive"	 "0"
 			}
-		}"OswaldRegular26"
+		}
+		"OswaldRegular26"
 		{
 			"1"
 			{
