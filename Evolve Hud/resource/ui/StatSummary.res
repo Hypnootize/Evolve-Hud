@@ -17,28 +17,29 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"MainBackground"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"-99"
 		"wide"			"f0"
 		"tall"			"480"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
-		"image"			"stamp_background_map"
+		"image"			""
 		"scaleImage"		"1"
-	}
-
-	"LoadingBackground"
+	}	
+	
+	"Background_custom"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"LoadingBackground"
-		"xpos"			"0"
+		"fieldName"		"Background_Custom"
+		"xpox"			"0"
 		"ypos"			"0"
+		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"stamp_background_map"
+		"image"			"replay/thumbnails/Loading_Custom"
 		"scaleImage"	"1"
-	}
+	}	
 	
 	"MapInfo"
 	{
@@ -57,7 +58,7 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Background"
-			"xpos"			"0"
+			"xpos"			"99999"
 			"ypos"			"0"
 			"wide"			"0"
 			"tall"			"0"
@@ -71,7 +72,7 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"ActualBackground"
-			"xpos"			"0"
+			"xpos"			"9999"
 			"ypos"			"0"
 			"wide"			"f0"
 			"tall"			"480"
@@ -85,7 +86,7 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"MapImage"
-			"xpos"			"30"
+			"xpos"			"9999"
 			"ypos"			"45"
 			"zpos"			"2"
 			"wide"			"300"
@@ -100,7 +101,7 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"	"ContributedLabel"
-			"xpos"			"30"
+			"xpos"			"9999"
 			"ypos"			"345"
 			"zpos"			"40"
 			"wide"			"300"
@@ -199,7 +200,7 @@
 			"font"			"HudFontSmallBold"
 			"labelText"		"%title%"
 			"textAlignment"	"north"
-			"xpos"			"c20"
+			"xpos"			"9999"
 			"ypos"			"135"
 			"zpos"			"2"
 			"wide"			"275"
@@ -217,7 +218,7 @@
 			"font"			"HudFontSmallBold"
 			"labelText"		"%authors%"
 			"textAlignment"	"north"
-			"xpos"			"c20"
+			"xpos"			"9999"
 			"ypos"			"155"
 			"zpos"			"2"
 			"wide"			"275"
@@ -236,7 +237,7 @@
 			"font"			"HudFontSmallBold"
 			"labelText"		"%map_leaderboard_title%"
 			"textAlignment"	"north"
-			"xpos"			"c20"
+			"xpos"			"9999"
 			"ypos"			"230"
 			"zpos"			"2"
 			"wide"			"275"
@@ -298,8 +299,8 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"	"StatData"
 		"xpos"		"0"
-		"ypos"		"-80"
-		"zpos"		"1"
+		"ypos"		"0"
+		"zpos"		"2"
 		"wide"		"f0"
 		"tall"		"480"
 		"visible"	"1"

@@ -308,7 +308,8 @@
 		
 		if_match
 		{
-			"zpos"				"5"
+			"ypos"			"8"
+			"zpos"			"5"
 		}
 		
 		"TimePanelValue"
@@ -329,12 +330,7 @@
 			
 		    if_match
 			{
-				"proportionaltoparent"	"1"
-
-				"xpos"			"25"
-				"ypos"			"13"
-				"tall"			"10"
-				"font"			"HudFontSmall"
+				
 			}
 		}	
 	}

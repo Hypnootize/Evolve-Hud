@@ -30,6 +30,7 @@
 		if_match
 		{
 			"xpos"				"-15"
+			"ypos"				"8"
 		}
 		
 		"TimePanelValue"
@@ -47,11 +48,6 @@
 			"enabled"		"1"
 			"textAlignment"	"center"
 			"labelText"		"0:00"
-			
-			if_match
-			{
-				"ypos"			"7"
-			}
 		}	
 	}
 	
@@ -103,6 +99,7 @@
 		if_match
 		{
 			"xpos"			"19"
+			"ypos"			"8"
 		}
 		
 		"TimePanelValue"
@@ -120,11 +117,6 @@
 			"enabled"	"1"
 			"textAlignment"	"center"
 			"labelText"	"0:00"
-			
-			if_match
-			{
-				"ypos"		"7"
-			}
 		}	
 	}
 	

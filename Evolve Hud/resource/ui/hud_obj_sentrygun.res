@@ -152,7 +152,7 @@
 			"tall"				"48"
 			"visible"			"1"
 			"enabled"			"1"
-			"image"				"replay/thumbnails/replay/bg_dead"
+			"image"				"replay/thumbnails/bg_dead"
 
 			"src_corner_height"	"23"				// pixels inside the image
 			"src_corner_width"	"23"

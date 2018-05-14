@@ -164,7 +164,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"image"			"replay/thumbnails/obj/pointNeutral"
+		"image"			""
 		"scaleImage"	"1"
 
 		"if_multiple_trains"
