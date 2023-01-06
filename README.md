@@ -1,12 +1,7 @@
 # Evolve-Hud
-Screenshots: https://imgur.com/a/C9Ij8
 
-How to Download and Install: https://imgur.com/a/w3Ah6
+**[SCREENSHOTS ALBUM](https://imgur.com/a/C9Ij8)** 
 
-Original Damage Color:
+**[INSTALLATION](https://imgur.com/a/w3Ah6)**
 
-hud_combattext_red 72
-
-hud_combattext_green 185
-
-hud_combattext_blue 189
+![](https://i.imgur.com/g6geFFG.jpg)

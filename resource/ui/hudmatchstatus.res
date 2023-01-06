@@ -221,26 +221,6 @@
 //		"border"			"EconItemBorder"
 	}
 	
-	"TimerTeamIndicator"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"TimerTeamIndicator"
-		"xpos"			"c-2123120"
-		"ypos"			"0"	
-		"zpos"			"0"
-		"wide"			"41"
-		"tall"			"2"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"replay\thumbnails\bg_hudblue"
-		"scaleImage"		"1"
-		"teambg_1"		"replay\thumbnails\bg_hudblue"
-		"teambg_2"		"replay\thumbnails\bg_hudred"
-		"teambg_3"		"replay\thumbnails\bg_hudblue"
-	}
-	
 	"RankUpLabel"
 	{	
 		"ControlName"	"CExLabel"

@@ -98,6 +98,11 @@
 		
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"BluScoreShade1"
@@ -121,6 +126,11 @@
 		
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"RedScoreShade"
@@ -145,6 +155,11 @@
 		
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"RedScoreShade1"
@@ -168,6 +183,11 @@
 		
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"ShadeBG"
@@ -190,6 +210,11 @@
 		
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"MvMBG"
@@ -209,7 +234,7 @@
 
 		if_mvm
 		{
-			"visible"			"1"
+			"visible"		"0"
 		}
 	}
 	"BlueScoreBGShade"
@@ -229,11 +254,7 @@
 
 		if_mvm
 		{
-		    "visible"			"0"
-			"xpos"			"c-295"
-			"ypos"			"r394"
-			"wide"			"402"
-			"tall"			"171"
+			"visible"		"0"
 		}
 	}
 	
@@ -252,6 +273,11 @@
 		"font"			"CircleSmall"
 		"fgcolor"		"EvolveTeamBlu"
 		"textAlignment"	"south-east"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"BGR1s"
@@ -269,6 +295,11 @@
 		"font"			"CircleSmallS"
 		"fgcolor"		"14 14 14 100"
 		"textAlignment"	"south-east"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 
 	"BlueScoreBG"
@@ -340,6 +371,11 @@
 		"font"			"CircleSmall"
 		"fgcolor"		"EvolveTeamRed"
 		"textAlignment"	"south-east"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"BGR2s"
@@ -357,6 +393,11 @@
 		"font"			"CircleSmallS"
 		"fgcolor"		"14 14 14 100"
 		"textAlignment"	"south-east"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"RedTeamScore"
@@ -417,6 +458,11 @@
 		"tall"			"22"
 		"visible"		"0"
 		"enabled"		"1"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"BlueTeamPlayerCount"
@@ -482,6 +528,11 @@
 		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"VSlulS"
@@ -499,6 +550,11 @@
 		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	
 	"RedScoreBG"
@@ -552,11 +608,7 @@
 
 		if_mvm
 		{
-		    "visible"			"0"
-			"xpos"			"c-295"
-			"ypos"			"r394"
-			"wide"			"402"
-			"tall"			"171"
+			"visible"		"0"
 		}
 	}
 	
@@ -648,12 +700,7 @@
 
 		if_mvm
 		{
-		    "fgcolor"		"234 234 234 255"
-			"xpos"			"c-295"
-			"ypos"			"r413"
-		    "wide_minmode"  "530"
-			"xpos_minmode"	"-310"
-			"ypos_minmode"	"r413"
+			"visible"		"0"
 		}
 	}
 	"ServerTimeLeftBG"
@@ -687,8 +734,7 @@
 
 		if_mvm
 		{
-			"xpos"			"c-395"
-			"wide"			"590"
+			"visible"		"0"
 		}
 	}
 	
@@ -712,13 +758,7 @@
 
 		if_mvm
 		{
-		    "fgcolor"		"234 234 234 255"
-		    "textAlignment"	"center"
-			"font"			"Book19"
-			"xpos"			"c-295"
-			"ypos"			"-2"
-			"tall"			"19"
-			"wide"			"591"
+			"visible"		"0"
 		}
 	}
 	
@@ -742,13 +782,7 @@
 
 		if_mvm
 		{
-		    "fgcolor"		"234 234 234 255"
-		    "textAlignment"	"center"
-			"font"			"Book19"
-			"xpos"			"c-295"
-			"ypos"			"-2"
-			"tall"			"19"
-			"wide"			"591"
+			"visible"		"0"
 		}
 	}
 	
@@ -784,8 +818,7 @@
 
 		if_mvm
 		{
-			"xpos"		"c-295"
-			"ypos"			"r456"
+			"visible"		"0"
 		}
 	}	
 	"SpectatorsInQueue"
@@ -857,8 +890,6 @@
 		if_mvm
 		{
 			"visible"		"0"
-			"wide"		"0"
-			"tall"		"0"
 		}
 	}
 	"PlayerNameLabel"
@@ -1180,8 +1211,7 @@
 
 		if_mvm
 		{
-			"xpos"		"0"
-			"ypos"		"-48"
+			"wide"		"0"
 		}
 		
 		"KillsLabel2"
@@ -2202,8 +2232,8 @@
 	{
 		"ControlName"		"CTFHudMannVsMachineScoreboard"
 		"fieldName"			"MvMScoreboard"
-		"xpos"				"0"
-		"ypos"				"0"
+		"xpos"				"c-300"
+		"ypos"				"-8"
 		"zpos"				"10"
 		"wide"				"f0"
 		"tall"				"480"
